@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+struct Tovari
+{
+int kolvo;
+int price;
+int god;
+char proizvod[30];
+};
+main()
+{
+int i, max;
+
+struct Tovari t[4]=
+{
+100,100,2003,"Ololo.corp",
+150,200,2002,"bank.corp",
+234,300,2004,"Ololo.corp",
+155,250,2002,"bank.corp"
+};
+
+printf("\n Kol-vo: %d\n Price: %d\n God izgotovleniya: %d\n Proizvoditel: %s\n", t[0].kolvo,t[0].price,t[0].god,t[0].proizvod);
+printf("\n Kol-vo: %d\n Price: %d\n God izgotovleniya: %d\n Proizvoditel: %s\n", t[1].kolvo,t[1].price,t[1].god,t[1].proizvod);
+printf("\n Kol-vo: %d\n Price: %d\n God izgotovleniya: %d\n Proizvoditel: %s\n", t[2].kolvo,t[2].price,t[2].god,t[2].proizvod);
+printf("\n Kol-vo: %d\n Price: %d\n God izgotovleniya: %d\n Proizvoditel: %s\n", t[3].kolvo,t[3].price,t[3].god,t[3].proizvod);
+
+for (int i = 0; i < 4; i++)
+{
+if (t[i].price > max)
+max = t[i].price;
+}
+
+printf("Max = %d\n", max);
+
+for (int i = 0; i < 4; i++)
+{
+if (t[i].price == max)
+{
+printf("\n Kol-vo: %d\n Price: %d\n God izgotovleniya: %d\n Proizvoditel: %s\n", t[i].kolvo,t[i].price,t[i].god,t[i].proizvod);
+}
+}
+
+getchar();
+}
