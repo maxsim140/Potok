@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+ main()
+{
+int y, m;
+float N;
+    printf("Vvedite peremennyy cheluu\n");
+    scanf("%d%d", &y, &m );
+        N=pow(m,2)+2.8*m+0.355/cos(2*y)+3.6;
+    printf("/nRezyltat: %f\n", N);
+getchar();
+}
