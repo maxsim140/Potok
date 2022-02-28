@@ -1,0 +1,15 @@
+#include <stdio.h>
+main()
+{
+    int i, a, b, c;
+     a=0;
+     b=1;
+    for(i=1; i<=45; i++)
+    {
+    c=a+b;
+    a=b;
+    b=c;
+    printf("\n Fibonacci numbers: %d = %d", i, b);
+    }
+    getchar();
+}
