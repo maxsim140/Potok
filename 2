@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <locale.h>
+const int N=14;
+main()
+{
+setlocale(LC_ALL, "Rus");
+
+int i, n, z, x;
+for (i=0; i<=7; i++)
+{
+ z=i+1;
+ printf("\nПо возрастанию: %d", z);
+}
+for (n=8; n<=14; n++)
+{
+ x=n-1;
+ printf("\nПо убыванию: %d", n );
+}
+}
