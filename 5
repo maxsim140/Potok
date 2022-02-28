@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+main()
+{
+    int i,z,k;
+    srand (time(NULL));
+for (i=0; i<999; i++)
+    {
+    z= rand()%901+99;
+    k=z%10;
+if (k==0){printf("\nchislo= %d", z); break;}
+    }
+    getchar();
+}
